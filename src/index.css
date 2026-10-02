@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --primary-green: #1A8245;
+  --primary-light: #E8F5E9;
+  --lime-accent: #92D050;
+  --bg-color: #F8FAF9;
+  --text-dark: #1F2937;
+  --text-muted: #6B7280;
+  --border-color: #E5E7EB;
+  --white: #FFFFFF;
+  --red-alert: #FDE8E8;
+  --red-text: #9B1C1C;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-dark);
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.phone-mockup {
+  position: relative;
+  width: 390px;
+  height: 844px;
+  max-width: 100%;
+  max-height: 90vh;
+  background-color: #1f2937; /* Dark bezel */
+  border-radius: 48px;
+  padding: 14px;
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5), inset 0 0 0 2px #374151;
+}
+
+.notch {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 30px;
+  background-color: #1f2937;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  z-index: 1000;
+}
+
+.phone-screen {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color);
+  border-radius: 34px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  scrollbar-width: none; /* Firefox */
+  padding-top: 44px; /* Clear the notch */
+}
+
+.phone-screen::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+/* Animations */
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slide-in {
+  animation: slideIn 0.3s ease-out forwards;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

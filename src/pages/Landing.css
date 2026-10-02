@@ -91,7 +91,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 100px 48px 140px 48px; /* Increased bottom padding for the blend */
+  padding: 140px 48px 140px 48px; /* Reduced top padding to close the massive gap */
   max-width: 100%;
   margin: 0;
   gap: 64px;
@@ -129,7 +129,7 @@
   animation: slow-float 15s infinite ease-in-out alternate;
 }
 
-.icon-1 { top: 10%; left: 15%; animation-delay: 0s; transform: rotate(15deg) scale(2); }
+.icon-1 { top: 35%; left: 8%; animation-delay: 0s; transform: rotate(15deg) scale(2); }
 .icon-2 { top: 70%; left: 10%; animation-delay: -5s; transform: rotate(-25deg) scale(3); }
 .icon-3 { top: 20%; right: 45%; animation-delay: -2s; transform: rotate(45deg) scale(2.5); }
 .icon-4 { bottom: 15%; right: 40%; animation-delay: -7s; transform: rotate(-15deg) scale(4); }

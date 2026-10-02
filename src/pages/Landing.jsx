@@ -7,7 +7,7 @@ export default function Landing({ onStartDemo }) {
     <div className="landing-page">
       <nav className="landing-nav">
         <div className="landing-logo">
-          <img src="/dhaaga-logo.png" alt="DHAAGA Logo" style={{ height: '120px', width: 'auto', objectFit: 'contain' }} />
+          <img src="/dhaaga-logo.png" alt="DHAAGA Logo" style={{ height: '220px', width: 'auto', objectFit: 'contain', marginLeft: '-10px', marginTop: '-20px' }} />
         </div>
 
       </nav>
@@ -22,7 +22,7 @@ export default function Landing({ onStartDemo }) {
         </div>
         
         <div className="hero-content">
-          <h1>DHAAGA: <br/><span className="highlight">Tractoro ka godown</span></h1>
+          <h1><span className="highlight">Tractoro ka godown</span></h1>
           <p>DHAAGA provides 24/7 automated smart lockers for agricultural spare parts. Get back to the field faster with zero wait times.</p>
           <div className="hero-actions">
             <button className="btn-primary large" onClick={onStartDemo}>

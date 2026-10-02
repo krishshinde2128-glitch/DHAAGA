@@ -9,9 +9,7 @@ export default function Landing({ onStartDemo }) {
         <div className="landing-logo">
           <img src="/dhaaga-logo.png" alt="DHAAGA Logo" style={{ height: '120px', width: 'auto', objectFit: 'contain' }} />
         </div>
-        <button className="btn-primary" onClick={onStartDemo}>
-          Interact with Prototype
-        </button>
+
       </nav>
 
       <header className="landing-hero">

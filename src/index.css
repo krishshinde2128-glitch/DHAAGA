@@ -35,10 +35,11 @@ body {
   height: 844px;
   max-width: 100%;
   max-height: 90vh;
-  background-color: #1f2937; /* Dark bezel */
+  background-color: #1f2937;
+  /* Dark bezel */
   border-radius: 48px;
   padding: 14px;
-  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5), inset 0 0 0 2px #374151;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), inset 0 0 0 2px #374151;
 }
 
 .notch {
@@ -58,7 +59,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: #FAFAFA;
-  background-image: 
+  background-image:
     radial-gradient(circle at 10% 0%, rgba(26, 130, 69, 0.08) 0%, transparent 60%),
     radial-gradient(circle at 90% 100%, rgba(146, 208, 80, 0.1) 0%, transparent 60%);
   background-attachment: fixed;
@@ -68,18 +69,28 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  scrollbar-width: none; /* Firefox */
-  padding-top: 44px; /* Clear the notch */
+  scrollbar-width: none;
+  /* Firefox */
+  padding-top: 44px;
+  /* Clear the notch */
 }
 
 .phone-screen::-webkit-scrollbar {
-  display: none; /* Chrome/Safari */
+  display: none;
+  /* Chrome/Safari */
 }
 
 /* Animations */
 @keyframes slideIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .animate-slide-in {

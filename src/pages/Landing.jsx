@@ -22,7 +22,7 @@ export default function Landing({ onStartDemo }) {
         </div>
         
         <div className="hero-content">
-          <h1>DHAAGA: <br/><span className="highlight">Gaon ka Godown</span></h1>
+          <h1>DHAAGA: <br/><span className="highlight">Tractoro ka godown</span></h1>
           <p>DHAAGA provides 24/7 automated smart lockers for agricultural spare parts. Get back to the field faster with zero wait times.</p>
           <div className="hero-actions">
             <button className="btn-primary large" onClick={onStartDemo}>

@@ -1,4 +1,4 @@
-import { ShoppingCart, Search, Cog, Filter, Battery, Droplet, Zap, Wrench } from 'lucide-react';
+import { ShoppingCart, Search, Cog, Filter, Battery, Droplet, Zap, Wrench, MapPin } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { useShop } from '../context/ShopContext';
 import { useState } from 'react';
@@ -34,18 +34,7 @@ export default function Home() {
     <div className="home-container animate-slide-in">
       <header className="header">
         <div className="logo" onClick={() => setActiveCategory(null)} style={{ cursor: 'pointer' }}>
-          <div style={{
-            backgroundColor: 'var(--primary-green)',
-            color: 'white',
-            borderRadius: '8px',
-            padding: '4px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center'
-          }}>
-            <Wrench size={20} />
-          </div>
-          <span style={{ letterSpacing: '-0.5px' }}>DHAAGA</span>
+          <img src="/dhaaga-logo-black.png" alt="DHAAGA Logo" style={{ height: '56px', width: 'auto', objectFit: 'contain' }} />
         </div>
         <div 
           className="cart-icon" 
@@ -56,6 +45,12 @@ export default function Home() {
           {cartCount > 0 && <div className="cart-badge">{cartCount}</div>}
         </div>
       </header>
+
+      <div className="location-pill">
+        <MapPin size={14} color="var(--primary-green)" />
+        <span>DHAAGA Station #04 (Active)</span>
+        <div className="online-dot"></div>
+      </div>
 
       <div className="search-bar">
         <Search size={20} color="#9CA3AF" />

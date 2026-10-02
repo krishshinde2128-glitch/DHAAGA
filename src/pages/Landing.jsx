@@ -7,10 +7,7 @@ export default function Landing({ onStartDemo }) {
     <div className="landing-page">
       <nav className="landing-nav">
         <div className="landing-logo">
-          <div className="logo-icon">
-            <Wrench size={24} color="white" />
-          </div>
-          <span>DHAAGA</span>
+          <img src="/dhaaga-logo.png" alt="DHAAGA Logo" style={{ height: '120px', width: 'auto', objectFit: 'contain' }} />
         </div>
         <button className="btn-primary" onClick={onStartDemo}>
           Interact with Prototype
